@@ -12,8 +12,7 @@ extern “C”{
 }
 #endif
 ```
-这是因为
-
+这是因为  
 1. 在cpp中，需要声明函数为extern “C”
 2. 在c中，关键字extern “C”不支持
 3. 所以需要通过编译器的宏__cplusplus判断当前c还是cpp编译器在调用该头文件。
